@@ -2,5 +2,5 @@ import csv
 
 with open('phmsa_data.csv') as f:
     reader = csv.reader(f)
-    for row in csv:
+    for row in reader:
         print(row)

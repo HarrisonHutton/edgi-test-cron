@@ -7,5 +7,7 @@ data = requests.get(PHMSA_DATA_URL)
 
 with open('phmsa_data.csv', 'w') as f:
     writer = csv.writer(f)
-    for line in data.text.split('\n'):
+    lines = data.text.split('\n')
+    for line in lines:
+        line = line.split('\t')
         writer.writerow(line)
