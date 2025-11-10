@@ -19,3 +19,5 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run data fetching script
         run: python3 pull_phmsa_data.py
+      - name: Run data loading script
+        run: python3 read_csv.py
