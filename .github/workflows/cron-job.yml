@@ -3,6 +3,7 @@ name: Daily fetch of PHMSA data
 on:
   schedule:
     - cron: '0 0 * * *' # Every day at midnight UTC
+  workflow_dispatch:
 
 jobs:
   run-script:
