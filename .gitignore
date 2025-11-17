@@ -1,2 +1,3 @@
 venv/
 phmsa_data.csv
+.DS_Store

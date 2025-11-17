@@ -17,7 +17,8 @@ jobs:
           python-version: '3.14'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      
+      # Data fetching
       - name: Run data fetching script
         run: python3 pull_phmsa_data.py
-      - name: Run data loading script
         run: python3 read_csv.py
